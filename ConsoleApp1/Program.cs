@@ -4,7 +4,7 @@ namespace ConsoleApp1
 {
     class Program
     {
-        //    public readonly override string ToString() =>
+        //public readonly override string ToString() =>
         //$"({X}, {Y}) is {Distance} from the origin";
 
         static void Main(string[] args)
@@ -32,6 +32,8 @@ namespace ConsoleApp1
 
             Console.ReadKey();
         }
+
+
 
         static int GetApplicationLength(Person? person)
         {

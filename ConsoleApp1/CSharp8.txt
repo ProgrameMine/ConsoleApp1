@@ -1,0 +1,17 @@
+﻿C# 6.0：Expression – Bodied Methods
+#Expression-bodied 方法是C# 6.0 中另一个能简化代码的特性。我们已经对lambda表达式将funciton和delegation关联起来的这种用法很熟悉了。
+#Expression-bodied 将lambda 表达式的这种用法扩展到了方法上。
+
+public static string GetTime()
+{
+    return "Current Time - " + DateTime.Now.ToString("hh:mm:ss");
+}
+
+转化：
+
+public static string GetTime() =>   "Current Time - " + DateTime.Now.ToString("hh:mm:ss");
+
+C# 7 里面的Pattern Mathing（模式匹配）
+
+
+https://docs.microsoft.com/zh-cn/dotnet/csharp/whats-new/csharp-8

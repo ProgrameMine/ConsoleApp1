@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Net.NetworkInformation;
-using System.Text;
 
 namespace ConsoleApp1
 {
@@ -34,25 +30,31 @@ namespace ConsoleApp1
 
         public static int GetWeekdayNumOriginalMethod(Weekends weekday)
         {
-            switch (weekday)
+            //var num = weekday switch
+            //{
+            //    Weekends.Sun => 0,
+            //    Weekends.Mon => 1,
+            //    Weekends.Tues => 2,
+            //    Weekends.Wed => 3,
+            //    Weekends.Thur => 4,
+            //    Weekends.Fri => 5,
+            //    Weekends.Sat => 6,
+            //    _ => throw new ArgumentException(message: "invalid enum value"),
+            //};
+
+            var num = weekday switch
             {
-                case Weekends.Sun:
-                    return 0;
-                case Weekends.Mon:
-                    return 1;
-                case Weekends.Tues:
-                    return 2;
-                case Weekends.Wed:
-                    return 3;
-                case Weekends.Thur:
-                    return 4;
-                case Weekends.Fri:
-                    return 5;
-                case Weekends.Sat:
-                    return 6;
-                default:
-                    throw new ArgumentException(message: "invalid enum value");
-            }
+                Weekends.Sun => 0,
+                Weekends.Mon => throw new NotImplementedException(),
+                Weekends.Tues => throw new NotImplementedException(),
+                Weekends.Wed => throw new NotImplementedException(),
+                Weekends.Thur => throw new NotImplementedException(),
+                Weekends.Fri => throw new NotImplementedException(),
+                Weekends.Sat => throw new NotImplementedException(),
+                _ => throw new NotImplementedException(),
+            };
+
+            return num;
         }
 
         //属性模式
